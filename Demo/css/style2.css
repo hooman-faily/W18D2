@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "title title title"
+    "sidebar content content"
+    "footer footer footer"
+    ;
+}
+.title {
+  grid-area: title;
+}
+.header {
+  grid-area: sidebar;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.content {
+  grid-area: content;
+/*   display: grid; */
+/*   grid-template-columns: 1fr 1fr 1fr; */
+}
+.nestedGrid {
+  background-color: orange;
+  margin:10px;
+}
+.footer {
+  grid-area: footer;
+}
+.grid > div {
+ background-color:lightgrey;
+ border: 1px solid blue;
+}

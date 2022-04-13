@@ -1,0 +1,19 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+@media all and (max-width: 900px) {
+    .box1{
+        background-color: rgb(208, 255, 0);
+    }
+    .box2{
+        background-color: rgb(168, 0, 140);
+    }
+}

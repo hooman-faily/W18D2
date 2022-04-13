@@ -1,0 +1,31 @@
+.container-with-grid {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "footerBar footerBar footerBar"
+      "leftSidebar leftSidebar rightContent"
+      "topRow topRow headerBar"
+      ;
+  }
+  .topRow {
+    grid-area: topRow;
+    background-color: gray;
+  }
+  .headerBar {
+    grid-area: headerBar;
+    background-color: lightgray;
+  }
+  .leftSidebar {
+    grid-area: leftSidebar;
+  }
+  .rightContent {
+    grid-area: rightContent;
+    background-color: silver;
+  
+  }
+  .footerBar {
+    grid-area: footerBar;
+    background-color: dimgray;
+  }
